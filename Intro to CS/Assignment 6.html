@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+<title>Graphics</title>
+
+<style>
+
+/* Code adapated from https://www.w3schools.com/css/css3_animations.asp */
+
+body {
+
+	background-color: black;
+
+}
+
+.first {
+
+ width: 100px;
+
+ height: 100px;
+
+ background-color: red;
+
+ position: relative;
+
+ animation-name: example;
+
+ animation-duration: 2s;
+
+ animation-direction: alternate-reverse;
+
+ animation-timing-function:ease ;
+
+}
+
+.testdiv {
+
+ width: 125px;
+
+ height: 125px;
+ 
+ border-radius: 50%;
+ 
+ background-color: blue;
+
+ position: relative;
+
+ animation-name: test;
+
+ animation-duration: 7s;
+
+ animation-direction: alternate;
+
+ animation-timing-function:ease;
+ 
+
+}
+
+p {
+
+  text-align: left;
+  text-indent: 5em;
+  font-size: 20px;
+  color: white;
+
+}
+h2 {
+
+	top: 25%;
+	text-align: center;
+	font-size: 15px;
+	position: absolute;
+	color: white;
+}
+
+img {
+
+	height: 150px;
+	width: 150px;
+	
+
+}
+.imgtst {
+
+
+	border: 3px solid;
+	border-color: red;
+	border-radius: 50%;
+
+}
+.indent {
+
+	text-indent: 7.8em;
+
+}
+
+@keyframes example {
+
+ 0% {background-color:red; left:0px; top:0px;}
+
+ 25% {background-color:red; left:200px; top:0px;}
+
+ 50% {background-color:red; left:200px; top:200px;}
+
+ 75% {background-color:red; left:0px; top:200px;}
+
+ 100% {background-color:red; left:0px; top:0px;}
+
+}
+
+@keyframes test {
+
+ 0% {background-color:blue; left:0px; top:20px;}
+
+ 25% {background-color:red; left:280px; top:20px;}
+
+ 50% {background-color:purple; left:280px; top:303px;}
+
+ 75% {background-color:orange; left:0px; top:303px;}
+
+ 100% {background-color:blue; left:0px; top:0px;}
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+
+
+<h1 style="color:white">CSS Animation</h1>
+
+
+
+<div class="first"> <h2>Around the cool</h2> </div>
+
+<br>
+
+<p><b> This is cool </b></p>
+
+<br><br><br><br><br><br><br><br>
+
+
+<div class="testdiv"><h2>Click on the Clock maybe?</h2></div>
+<h4 class = "indent"><a href="https://www.timeanddate.com/worldclock/"><img src="https://clipart.world/wp-content/uploads/2020/11/Classic-Wall-Clock-clipart-transparent.png" class="imgtst" class="border"></img></a></h4>
+
+
+<br><br><br><br><br><br><br><br><br><br><br><br>
+
+
+<p.1 style="color:white">End of Program*********************************</p.1>
+
+
+</body>
+
+</html>
+
+
+
+
