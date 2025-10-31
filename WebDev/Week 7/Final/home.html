@@ -1,0 +1,128 @@
+<!-- 
+Dylan Johnson
+Final Project Home
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Home Page</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel = "stylesheet" href = "Style1.css">
+<script defer src="valid.js"></script>
+</head>
+
+<body>
+    <a class="screen-reader-text skip-link" href="#body_of_page">Skip Navigation</a>
+    <header>
+        <span onclick="openNav()">&#9776;</span>
+        <h1>My Favorites</h1>
+    </header>
+    <main id="body_of_page">
+        
+        <table id="places_table">
+            <thead>
+                <tr>
+                    <th colspan="4" id="table_header">Popular Places around the Lake</th>
+                </tr>
+                <tr id="column_desc">
+                    <th>Name</th>
+                    <th>Location</th>
+                    <th>Description</th>
+                    <th>Picture</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="Name elem">
+                        Whiskey Joe's
+                    </td>
+                    <td class="Location elem">
+                        <a href="https://www.google.com/search?q=whiskey+Joes&rlz=1C1SQJL_enUS901US901&oq=whiskey+Joes&aqs=chrome..69i57j46i175i199i512j46i131i433i512j46i131i199i433i465j46i131i433i512l2j0i131i433i512j0i131i433i457j0i512j0i271.1777j0j7&sourceid=chrome&ie=UTF-8#">Highway 70, 1 mile past the round-a-bout in Siren</a>
+                    </td>
+                    <td class="Description elem">
+                        <p>Great weekend destination! Amazing food, GREAT drinks, and live music to keep you going all night!</p>
+                    </td>
+                    <td class="Picture elem">
+                        <img src="img/Whiskey%20Joes.jpg" alt="Whiskey Joes">
+                    </td>
+                </tr>
+                <tr>
+                    <td class="Name elem">
+                        The Co-Op
+                    </td>
+                    <td class="Location elem">
+                        <a href="https://www.google.com/search?q=burnett+dairy+cooperative&rlz=1C1SQJL_enUS901US901&oq=Burnett+Dairy+Cooperative&aqs=chrome.0.0i355i512j46i175i199i512j0i512l2j0i22i30j69i60l2j69i61.231j0j4&sourceid=chrome&ie=UTF-8#">15 Minutes West of Siren</a>
+                    </td>
+                    <td class="Description elem">
+                        <p>A destination for on the way through, or on the way home. All sorts of fresh dairy related products (including cheese curds and pizza). Also has some of the best Ice Cream around!</p>
+                    </td>
+                    <td class="Picture elem">
+                        <img src="img/coop.jfif" alt="The Co-Op">
+                    </td>
+                </tr>
+                <tr>
+                    <td class="Name elem">
+                        FourWinds Market
+                    </td>
+                    <td class="Location elem">
+                        <a href="https://www.google.com/search?gs_ssp=eJzj4tVP1zc0TDbKyjYpMawyYLRSNagwNUpMsTQysDBOSTJINDcztTKoMDQ1NE0xNDQ0skxKtTQ0SvESTMsvLVIoz8xLKVbITSzKTi0BAN4PFTY&q=four+winds+market&rlz=1C1SQJL_enUS901US901&oq=four+winds&aqs=chrome.2.69i57j46i433i512j46i175i199i512j0i512l2j46i175i199i512j46i131i199i433i465i512j0i512j0i131i433i512j0i433i512.5467j0j9&sourceid=chrome&ie=UTF-8#">1 Mile North of Siren</a>
+                    </td>
+                    <td class="Description elem">
+                        <p>Recently located in town, they moved a mile up the road, increased capcity, and is now the number one spot of anything you might need.</p>
+                    </td>
+                    <td class="Picture elem">
+                        <img src="img/fourwinds.jpg" alt="Four Winds">
+                    </td>
+                </tr>
+                <tr>
+                    <td class="Name elem">
+                        Burnett County Airport
+                    </td>
+                    <td class="Location elem">
+                        <a href="https://www.google.com/search?gs_ssp=eJzj4tVP1zc0TDbKyjYpMawyYLRSNagwNUpMsTQysDBOSTJINDcztTKoMDQ1NE0xNDQ0skxKtTQ0SvESTMsvLVIoz8xLKVbITSzKTi0BAN4PFTY&q=four+winds+market&rlz=1C1SQJL_enUS901US901&oq=four+winds&aqs=chrome.2.69i57j46i433i512j46i175i199i512j0i512l2j46i175i199i512j46i131i199i433i465i512j0i512j0i131i433i512j0i433i512.5467j0j9&sourceid=chrome&ie=UTF-8#">Highway 70 right past the round-a-bout in Siren</a>
+                    </td>
+                    <td class="Description elem">
+                        <p>While it is a smaller air strip, there is still plenty of activities. Best of which being the air show that happens once a year in the summer!</p>
+                    </td>
+                    <td class="Picture elem">
+                        <img src="img/Airfield.png" alt="Air field">
+                    </td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td colspan="4" class="table_footer">Clam Lake<br>Siren, Wisconsin</td>
+                </tr>
+            </tfoot>
+        </table>
+
+    </main>
+    <nav>
+        
+        <div id="mySidenav" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <a href="home.html" id="home">My Favorite</a>
+            <a href="page2.html" id="p2">Other Popular Destinations</a>
+            <a href="page3.html" id="p3">Misc Pictures</a>
+            
+            <a href="#" id="logout" onclick="logout()">Logout</a>
+          </div>
+
+        
+    </nav>
+    <aside></aside>
+    <footer>
+        <h2>Created by:</h2>
+        <p>Dylan Johnson</p>
+    </footer>
+    
+
+
+    
+
+</body>
+
+</html>
+

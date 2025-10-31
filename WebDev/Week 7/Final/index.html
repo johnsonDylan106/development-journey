@@ -1,0 +1,39 @@
+<!-- 
+Dylan Johnson
+Final Project Login
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script defer src="valid.js"></script>
+    <title>Log In Screen</title>
+</head>
+<body>
+    <div class="container">
+        <h1 class="label">User Login</h1>
+        <form class="login_form" id="login_form" method="post" name="form" action="javascript:void(0)">
+
+            <div class="font">Email</div>
+            <input type="text" name="email" id="email" required autocomplete="off">
+
+            <div class="font font2">Password</div>
+            <input type="password" name="pass" id="password" required>
+
+            <div id="fail" onload="check()"></div>
+
+            <button class="submit" id="submit" onclick="login()">Login</button>
+
+        </form>
+
+    </div>
+    
+</body>
+</html>
+
+
+
+<!-- action="home.html" -->

@@ -1,0 +1,353 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+/* -------------- Skip Nav ---------------- */
+
+.screen-reader-text {
+    border: 0;
+    /* clip: rect(repeat(1px, 4)); */
+    clip-path: inset(50%);
+    height: 1px;
+    width: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    word-wrap: normal !important;
+}
+
+.screen-reader-text:focus {
+    background-color: #eee;
+    /* clip: auto !important; */
+    clip-path: none;
+    color: #444;
+    display: block;
+    font-size: 1em;
+    height: auto;
+    width: auto;
+    top: 5px;
+    left: 5px;
+    line-height: normal;
+    padding: 15px 23px 14px;
+    text-decoration: none;
+    z-index: 100000;
+}
+
+/* ----------- Main Body Elements ------------- */
+
+body {
+    background: url('img/one.jpg');
+    background-size: auto;
+    color: black;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    height: 100vh;
+    display: grid;
+    w: 
+    'header header header'
+    'nav content sidebar'
+    'footer footer footer'
+    ;
+
+    grid-template-columns: .1fr 4fr .1fr;
+    grid-template-rows: .5fr 4fr .5fr;
+
+}
+
+header, footer, main, aside, nav {
+    padding: 20px;
+}
+
+header {
+    grid-area: header;
+    text-align: center;
+    font-size: larger;
+}
+
+header > h1 {
+    color: white;
+}
+
+nav {
+    grid-area: nav;
+}
+
+main {
+    grid-area: content;
+}
+
+aside {
+    grid-area: sidebar;
+}
+
+footer {
+    grid-area: footer;
+    text-align: center;
+    color: white;
+}
+
+footer > h2 {
+    font-size: small;
+}
+
+footer > p {
+    font-size: x-small;
+}
+
+a {
+    color: black;
+}
+
+/* All links turn red when mouse goes over them */
+a:hover {
+    color: red;
+}
+
+/* ---------- Pull out side bar ---------- */
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+  }
+
+span {
+    font-size: 30px;
+    cursor: pointer;
+    left: 18px;
+    position: fixed;
+    color: white;
+  }
+  
+  .sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+  }
+  
+  .sidenav a:hover {
+    color: #f1f1f1;
+  }
+  
+  .sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+  }
+
+  .sidenav > #logout {
+    margin-top: 100%;
+  }
+
+  .sidenav > #logout:hover {
+    color: red;
+  }
+/* --------------------------------------- */
+
+/* --------- Popular places Table ----------- */
+#places_table {
+    color: white;
+    width: 100%;
+}
+
+.Location > a {
+    color: white;
+}
+
+.Location > a:hover {
+    color: red;
+}
+
+#table_header {
+    text-align: center;
+    font-size: x-large;
+    border-bottom: 3px dotted rgb(100, 202, 243);
+    padding-bottom: 10px;
+}
+
+#column_desc > th {
+    border-bottom: 1px solid rgb(100, 202, 243);
+    padding-top: 15px;
+    padding-bottom: 10px;
+}
+
+.elem {
+    width: 25%;
+    border-bottom: 1px solid black;
+}
+
+.Description > p {
+    text-overflow: clip;
+}
+
+.Picture > img {
+    width: 100%;
+}
+
+tbody {
+    text-align: center;
+}
+
+tfoot{
+    text-align: center;
+}
+
+.table_footer {
+    padding-top: 15px;
+}
+
+/* ----------- Page 2 List -------------- */
+
+.flex-container {
+    display: flex;
+    flex-wrap: nowrap;
+    color: white;
+    font-size: x-large;
+  }
+  
+.flex-container > li {
+    width: 33%;
+    margin: 10px;
+    line-height: 100%;
+    text-align: left;
+    padding-right: 10px;
+}
+
+.secondary {
+    padding-top: 20px;
+    padding-bottom: 15px;
+    border-top: 2px solid rgb(59, 137, 168);
+}
+
+.secondary > li {
+    margin-left: 20px;
+    font-size: small;
+}
+
+.secondary > li > a {
+    color: white;
+}
+
+.secondary > li > a:hover {
+    color: red;
+}
+
+
+/* ----------- Page 3 Images Grid ----------- */
+
+#pictures_of_places {
+    display: grid;
+    grid-template-areas: 
+    'phouse dq grc'
+    'tt LCA CLP'
+    'CSC MMA AWR'
+    ;
+
+    gap: 5px;
+    color: white;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+}
+
+.phouse {
+    grid-area: phouse;
+}
+
+.dq {
+    grid-area: dq;
+}
+
+.grc {
+    grid-area: grc;
+}
+
+.tt {
+    grid-area: tt;
+}
+
+.lca {
+    grid-area: LCA;
+}
+
+.clp {
+    grid-area: CLP;
+}
+
+.csc {
+    grid-area: CSC;
+}
+
+.mma {
+    grid-area: MMA;
+}
+
+.awr {
+    grid-area: AWR;
+}
+
+.pics {
+    border: 5px solid black;
+}
+
+.pics > img {
+    width: 100%;
+    overflow: scroll;
+}
+
+.pics > h3 {
+    text-align: center;
+    padding: 10px;
+}
+
+
+@media all and (max-width: 768px),
+        all and (min-height: 1250px) {
+            
+            #pictures_of_places {
+                grid-template-areas:
+                'phouse'
+                'dq'
+                'grc'
+                'tt'
+                'LCA'
+                'CLP'
+                'CSC'
+                'MMA'
+                'AWR'
+                ;
+                
+                grid-template-columns: 1fr;
+                grid-template-rows: auto;
+                
+            }
+
+            
+            .Description > p {
+                overflow-y: scroll;
+                font-size: x-small;
+                max-height: 5em;
+            }
+            .Location > a {
+                overflow-y: scroll;
+                font-size: x-small;
+            }
+            .elem {
+                font-size: small;
+            }
+
+
+}

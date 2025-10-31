@@ -1,0 +1,156 @@
+<!-- 
+    Dylan Johnson
+    Lab 6
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Lab 6</title>
+    <meta charset="UTF-8">
+    <link rel = "stylesheet" href = "style.css">
+</head>
+<body>
+<a class="screen-reader-text skip-link" href="#body_of_page">Skip Navigation</a>
+    <header>
+        <h1>
+            Create a Web Page that describes the ways, and implements the ways, 
+            that a developer can make a Web site as accessible as possible.
+        </h1>
+    </header>
+    <main id="body_of_page">
+
+        <div id="content">
+
+            <div id="Pour">
+
+                <div id="pour-container">
+
+                    <h2 class="Header">POUR</h2>
+
+                    <div class="P cell">
+
+                        <h3>Perceivable</h3>
+
+                        <p>
+                            This content is meant to ensure it is possible that all viewers
+                            are able to view and hear any information on the page.
+                        </p>
+                        <img src="https://aem.cast.org/binaries/content/gallery/aemm/create/perceivable-16x9.jpg/perceivable-16x9.jpg/aem%3Amedium" alt="Perceivable">
+
+                    </div>
+
+                    <div class="O cell">
+
+                        <h3>Operable</h3>
+
+                        <p>
+                            Operable content means the user is able to interact with it using
+                            whatever input device they may have.
+                        </p>
+                        <img src="https://aem.cast.org/binaries/content/gallery/aemm/create/operable-16x9.jpg/operable-16x9.jpg/aem%3Amedium" alt="Operable">
+
+                    </div>
+
+                    <div class="U cell">
+
+                        <h3>Understandable</h3>
+
+                        <p>
+                            An Understandable design keeps it consistent and predictable. This way the
+                            user isn't struggling to comprehend the content on the page. 
+                        </p>
+                        <img src="https://aem.cast.org/binaries/content/gallery/aemm/create/understandable-16x9.jpg/understandable-16x9.jpg/aem%3Amedium" alt="Understandable">
+                        
+
+                    </div>
+
+                    <div class="R cell">
+
+                        <h3>Robust</h3>
+
+                        <p>
+                            A Robust site allows for multiple accessibility features making it easier
+                            for any and all users to use and navigate your a website no matter where or how
+                            it is accessed.
+                        </p>
+                        <img src="https://aem.cast.org/binaries/content/gallery/aemm/create/robust-16x9.jpg/robust-16x9.jpg/aem%3Amedium" alt="Robust">
+
+                    </div>     
+                                  
+                </div>
+
+            </div>
+            
+            
+            <div id="tableForm" class = "tableForm">
+                <h2>Table/Form</h2>
+                <h3>Table</h3>
+                <table>
+                
+                    <thead>
+                        <tr>
+                            <th>Perceivable</th>
+                            <th>Operable</th>
+                            <th>Understandable</th>
+                            <th>Robust</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>
+                                This content is meant to ensure it is possible that all viewers
+                                are able to view and hear any information on the page.
+                            </td>
+                            <td>
+                                Operable content means the user is able to interact with it using
+                                whatever input device they may have.
+                            </td>
+                            <td>
+                                An Understandable design keeps it consistent and predictable. This way the
+                                user isn't struggling to comprehend the content on the page. 
+                            </td>
+                            <td>
+                                A Robust site allows for multiple accessibility features making it easier
+                                for any and all users to use and navigate your a website no matter where or how
+                                it is accessed.
+                            </td>
+                        </tr>
+                    </tbody>
+                    <tfoot>
+                        <tr>
+                            <td colspan="4">POUR in my own words</td>
+                        </tr>
+                    </tfoot>
+                </table>
+
+                <h3 class="form">Form</h3>
+
+                <form action = "output.php" method = "POST" autocomplete = "off">
+                    
+                    <label for = "fname">First Name:</label>
+                        <input type = "text" id = "fname" name = "fname">
+                    
+                        
+                    <label for = "lname">Last Name:</label>
+                        <input type = "text" id = "lname" name = "lname">
+                    
+                    <label for = "underPour" class = "yn">Do you understand the concept of POUR?</label>
+                        <input type = "radio" id = "underPour" name = "yes" value = "Yes">Yes
+                        <input type = "radio" id = "notUnderPour" name = "no" value = "No">No
+                </form>
+
+
+
+            </div>
+
+        </div>
+    </main>
+    <Footer>
+        <h2>Validation Images</h2>
+        <img src="Images/HTML.png" alt="HTML Valid">
+        <img src="Images/CSS.png" alt="CSS Valid">
+    </Footer>
+    
+</body>
+</html>

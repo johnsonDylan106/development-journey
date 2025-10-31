@@ -1,0 +1,277 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+.screen-reader-text {
+    border: 0;
+    /* clip: rect(repeat(1px, 4)); */
+    clip-path: inset(50%);
+    height: 1px;
+    width: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    word-wrap: normal !important;
+}
+
+.screen-reader-text:focus {
+    background-color: #eee;
+    /* clip: auto !important; */
+    clip-path: none;
+    color: #444;
+    display: block;
+    font-size: 1em;
+    height: auto;
+    width: auto;
+    top: 5px;
+    left: 5px;
+    line-height: normal;
+    padding: 15px 23px 14px;
+    text-decoration: none;
+    z-index: 100000;
+}
+
+/* ---------------- Body Grid----------------- */
+body {
+    color: #9c9c9c;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    height: 100vh;
+    display: grid;
+    grid-template-areas: 
+    'header header header'
+    'content content content'
+    'footer footer footer'
+    ;
+
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 4fr 1fr;
+
+}
+
+header, footer, main {
+    background-color: rgb(31, 31, 31);
+    padding: 20px;
+    border: black 1px solid;
+}
+
+header {
+    grid-area: header;
+    background-color: silver;
+}
+
+footer {
+    grid-area: footer;
+}
+
+main {
+    grid-area: content;
+}
+
+h2 {
+    border-bottom: 1px solid black;
+}
+/* ---------------- end body Grid ------------ */
+
+/* ----------- All Content GRID -------------- */
+
+#content {
+    height: 100%;
+    display: grid;
+    text-align: center;
+    grid-template-areas: 'Pour table';
+
+    grid-template-columns: 50% 50%;
+}
+
+#Pour {
+    grid-area: Pour;
+}
+
+#tableForm {
+    grid-area: table;
+}
+
+#Pour, #tableForm {
+    border: 1px black solid;
+}
+
+/* -------- end all content grid ---------------- */
+
+/* ------------ Pour Grid ---------------- */
+
+#pour-container {
+    display: grid;
+    height: 100%;
+    text-align: left;
+    grid-template-areas: 
+    'Header Header'
+    'P O'
+    'U R'
+    ;
+
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 5fr 5fr;
+    gap: 1em;
+    padding: 1em;
+}
+
+.cell > p {
+    padding: 4px;
+}
+
+.cell > h3 {
+    border-bottom: 1px black solid;
+    text-align: center;
+    
+}
+
+.Header {
+    grid-area: Header;
+    text-align: center;
+}
+.P {
+    grid-area: P;
+}
+.O {
+    grid-area: O;
+}
+.U {
+    grid-area: U;
+}
+.R {
+    grid-area: R;
+}
+
+header > h1 {
+    font-size: large;
+    text-align: center;
+    color: black;
+}
+
+.cell > p {
+    padding-top: 1em;
+    line-height: 1.5;
+}
+.cell > img {
+    width: 100%;
+    margin: 5px;
+}
+
+/* ------------ End Pour Grid ------------ */
+
+/* ------------ Table & Form ------------ */
+
+/* ------------ Table ------------ */
+
+#tableForm > h3 {
+    padding-top: 1%;
+}
+
+td {
+    border: 1px solid white;
+}
+
+/* ---------- End Table ---------- */
+
+/* ------------ Form ------------ */
+
+.form {
+    text-align: left;
+}
+
+form > label::before {
+    content: "\a";
+    white-space: pre;
+    line-height: 30px;
+}
+
+form {
+    text-align: left;
+}
+
+.yn::after {
+    content: "\a";
+    white-space: pre;
+    line-height: 30px;
+}
+
+/* ---------- End Form----------- */
+
+/* ---------- End Table & Form ---------- */
+
+footer > img {
+    width: 25%;
+    border: 2px solid green;
+}
+
+footer > h2 {
+    text-align: center;
+}
+
+@media screen and (max-width: 768px),
+        screen and (min-height: 1250px) {
+    header > h1 {padding-bottom: 5px;}
+
+    #content {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        font-size: x-large;
+    }
+    #Pour {grid-column: 1; grid-row: 1;}
+    #tableForm {grid-column: 1; grid-row: 2;}
+
+    #pour-container {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        width: 100%;
+        font-size: x-large;
+    }   
+    .O {grid-column: 1; grid-row: 3;}
+    .U {grid-row: 4;}
+    .R {grid-column: 1; grid-row: 5;}
+
+}
+
+@media print {
+    header[role="banner"], footers {
+        display: none;
+    }
+    main {
+        width: 100% !important;
+        padding: 0 !important;
+        margin: 0 !important;
+    }
+    
+/*     * {
+        color: #000;
+        background-color: #fff;
+        @include box-shadow(none);
+        @include text-shadow(none);
+    } */
+
+    a:after {
+        content: "( "attr(href)" )";
+    }
+}
+
+@page {
+    margin: 2cm;
+    height: 100%;
+}
+
+@page:first {
+    margin: 0cm;
+}
+/* @page:last {
+    margin: 5cm;
+}
+@page:left {
+    margin: 2cm 1.5cm 2cm 2cm;
+}
+@page:right {
+    margin: 2cm 2cm 2cm 1.5cm;
+} */
