@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>CSC 135 Week 2 Lab 2</title>
+<meta charset="UTF-8">
+
+<style>
+
+	body {
+		margin-left: 10%;
+		margin-right: 10%;
+		background-color: white;
+		font-family: Calabri;
+		padding-bottom: 500px;
+	}
+	h1 {
+		text-align: center;
+		padding-top: 20px;
+	}
+	caption {
+		font-size: 30px;
+		border: 1px solid black;
+		padding-bottom: 10px;
+	}
+	table {
+		width: 100%;
+	}
+	thead {
+		display: table-header-group;
+	}
+	<!--Table1--------------------------------------------->
+	table.table1, th.table1, td.table1 {
+		border: 1px solid black;
+	}
+	.title {
+		width: 15%;
+	}
+	.summary {
+		width: 70%;
+	}
+	.rating {
+		text-align: center;
+		font-size: 20px;
+		width: 15%;
+	}	
+	<!--EndTable1------------------------------------------->
+	
+	table.table2, th.table2, td.table2 {
+		border: 1px solid red;
+		background-color: black;
+		color: white;
+		width: 25%;
+	}
+	
+	<!--Table3---------------------------------------------->
+	table.table3, th.table3, td.table3 {
+		border: 5px solid blue;
+		background-color: grey;
+		color: white;
+	}
+	td.table3 {
+		text-align: center;
+		font-size: 30px;
+	}
+	.name {
+		width: 25%;
+	}
+	.country {
+		width: 25%;
+	}
+	.pic {
+		width: 50%;
+	}
+	img.vaca {
+		width: 800px;
+		height: 450px;
+	}
+	
+	<!--EndTable3--------------------------------------------->
+	
+	p {
+		width: 100%;
+	} 
+	a {
+		color: red;
+	}
+
+</style>
+
+</head>
+
+<body>
+<h1>Lab 2 HTML/CSS Table Assignment</h1>
+
+<table class = "table1">
+	<caption>Table #1 - Video Games.</caption>
+	
+	<thead>
+		<tr>
+			<th class = "table1 title">Title</th>
+			<th class = "table1 summary">Summary</th>
+			<th class = "table1">Rating</th>
+		</tr>
+	</thead>
+	
+	<tr>
+		<td class = "table1">Tom Clancy's: Rainbow Six Seige</td>
+		<td class = "table1">
+			<p>First person shooter based on the Tom Clancy novels. The game has been around since 2015 and still has a large following. With new content dropping every couple months as well as challenges to keep players hooked it is no wonder the game still has a cult following.</p>
+			<p>I would say the downfall to the game being around this long is it's "hackability". Meaning that there have been many ways to cheat in the game making it unfair for players that enjoy the game as it is.</p>
+		</td>
+		<td class = "table1 rating">4 out of 5 Stars</td>		
+	</tr>
+	
+	<tr>
+		<td class = "table1">Call of Duty: Modern Warfare 2019</td>
+		<td class = "table1">
+			<p>A reboot of the classic Call of Duty 4 Modern Warfare from 2009. The campaign, while it was rather short, packed an impressive story. Reintroducing the characters from the original trilogy following a new story from a similar timeline.</p>
+			<p>The multiplayer left a lot to be desired. Not many of the maps were very playable or balanced. The spawn system did not help in that fact. In the end most player only ended up playing a few of the game mode options and on certain maps.</p>
+			<p>At the time, battle royale games were on the rise, Call of Duty was not going to miss out. They introduced Warzone, their take on the game mode. It has taken of and become one of the top battle royale games.</p>
+		</td>
+		<td class = "table1 rating"> 3 out of 5 Stars</td>
+	</tr>
+	
+	<tr>
+		<td class = "table1">Rocket League</td>
+		<td class = "table1">
+			<p>The, now, free to play car soccer game is a fan favorite. Taking in aspects from a lot of different video game styles they are able to give a diverse experience, not to mention rake in the cash.</p>
+			<p>Offering several different game modes, as well as a competitive game mode, there is something for every player, even those that are not a fan of soccer (myself included).</p>
+			<p>Can't forget to mention the seasonal and time limited game modes that are only around MAYBE once a year. </p>
+		</td>
+		<td class = "table1 rating">4 out of 5 Stars</td>
+	</tr>
+	
+	<tr>
+		<td class = "table1">Portal 2</td>
+		<td class = "table1">
+			<p>The second iteration of the class "Portal" game improves on the original by adding more features and challenges.</p>
+			<p>The puzzle game challenges players to utilize the game mechanics to make your way through, at times, tricky puzzles.</p>
+			<p>Even though I am mainly a fan of first person shooters, this game was A LOT of fun to play through!</p>
+		</td>
+		<td class = "table1 rating">4 out of 5 Stars</td>
+	</tr>
+	
+
+</table>
+
+<br><br>
+
+<table class = "table2">
+	<caption>Table #2 - Musical Artists.</caption>
+	
+	<thead>
+		<tr>
+			<th class = "table2">Song Name</th>
+			<th class = "table2">Artist</th>
+			<th class = "table2">Albumn</th>
+			<th class = "table2">Link to Lyrics</th>
+		</tr>
+	</thead>
+	
+	<tr>
+		<td class = "table2">Hotel California</td>
+		<td class = "table2">Eagles</td>
+		<td class = "table2">Hotel California</td>
+		<td class = "table2"><a href = "https://genius.com/Eagles-hotel-california-lyrics">Hotel California Lyrics</a></td>		
+	</tr>
+	
+	<tr>
+		<td class = "table2">Kickstart My Heart</td>
+		<td class = "table2">Mötley Crüe</td>
+		<td class = "table2">Dr. Feelgood</td>
+		<td class = "table2"><a href = "https://genius.com/Motley-crue-kickstart-my-heart-lyrics">Kickstart My Heart Lyrics</a></td>		
+	</tr>
+	
+	<tr>
+		<td class = "table2">Knock Knock</td>
+		<td class = "table2">Mac Miller</td>
+		<td class = "table2"> K.I.D.S.</td>
+		<td class = "table2"><a href = "https://genius.com/Mac-miller-knock-knock-lyrics">Knock Knock Lyrics</a></td>		
+	</tr>
+	
+	<tr>
+		<td class = "table2">Betty</td>
+		<td class = "table2">Yung Gravy</td>
+		<td class = "table2">YG3</td>
+		<td class = "table2"><a href = "https://genius.com/Yung-gravy-betty-get-money-lyrics">Betty Lyrics</a></td>		
+	</tr>
+
+</table>
+
+<br><br>
+
+<table class = "table3">
+	<caption>Table #3 - Vacation Destinations.</caption>
+	
+	<thead>
+		<tr>
+			<th class = "table3 name">Name</th>
+			<th class = "table3 country">Country</th>
+			<th class = "table3 pic">Picture</th>
+		</tr>
+	</thead>
+	
+	<tr>
+		<td class = "table3">Bora Bora</td>
+		<td class = "table3">Polynesia</td>
+		<td class = "table3"><img class = "vaca" src = "https://media-cdn.tripadvisor.com/media/photo-s/1d/10/74/8b/bungalows-facing-mont.jpg" alt = "Bora Bora"></td>		
+	</tr>
+	
+	<tr>
+		<td class = "table3">Paris</td>
+		<td class = "table3">France</td>
+		<td class = "table3"><img class = "vaca" src = "https://static.dw.com/image/60208186_303.jpg" alt = "Paris"></td>		
+	</tr>
+	
+	<tr>
+		<td class = "table3">Waikiki</td>
+		<td class = "table3">United States</td>
+		<td class = "table3"><img class = "vaca" src = "https://hawaii.imgix.net/2020/09/Hanauma-Bay.jpg?w=800&h=450&fit=crop&=entropy&auto=format" alt = "Waikiki"></td>		
+	</tr>
+	
+	<tr>
+		<td class = "table3">Orlando</td>
+		<td class = "table3">United States</td>
+		<td class = "table3"><img class = "vaca" src = "https://s7d2.scene7.com/is/image/TWCNews/n13_universal_orlando_globe_2021?wid=1250&hei=703&$wide-bg$" alt = "Universal"></td>		
+	</tr>
+	
+
+</table>
+
+<br><br>
+
+<h2>HTML Checker Image</h2>
+<img src = "Graphics/Lab2.png" alt = "">
+
+</body>
+
+</html>

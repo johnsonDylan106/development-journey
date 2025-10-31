@@ -1,0 +1,96 @@
+DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+  <meta charset="UTF-8">
+
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Document</title>
+
+  <style>
+
+    /* Add comments to explain EXACTLY what each line does */
+
+    ul{
+
+    display:flex;/*What would happen if this was the default block */
+
+    align-items: center; /*What would happen if you tried another value for align-items? */
+
+    background-color:aquamarine;
+
+    list-style: none; /*What does this do */
+
+    padding: .5em; /* What/Where is the padding? What is em? What does it mean 
+
+    if there is only one value */
+
+    margin:0; /* What/Where is the margin. What does it mean 
+
+    if there is only one value - what does it mean if there is no unit? */
+
+    }
+
+
+
+    li{
+
+       margin: 1em; /*Why does this become px when you look in the inspect feature */
+
+    }
+
+    
+
+    li#logo{
+
+      /*What happens if this is omitted */  
+
+      margin-right: auto;/* Explain the auto value on a flex item */
+
+    }
+
+      
+
+     /* A. How would arrange the last item Billie Jean to appear alone 
+
+     on the right
+
+     B. How would you create equal space around the Rafa li  */
+
+    
+
+    
+
+  </style>
+
+</head>
+
+<body>
+
+  <h1>Using the Margin to Adjust Space Around the Flex Items</h1>
+
+  
+
+  <ul>
+
+    <li id = "logo"> <img src = "graphic/FlexLogo.png" alt = "logo" ></li>
+
+    <li id = "Roger"> Roger</li>
+
+    <li id = "Rafa">Rafa</li>
+
+    <li id = "Ash">Ash</li>
+
+    <li id = "BJK">Billie Jean</li>
+
+  </ul>
+
+</body>
+
+</html>
+

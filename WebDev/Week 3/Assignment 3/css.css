@@ -1,0 +1,71 @@
+header, footer, .flexbox-container, .flexbox-item {
+    width: 75%; 
+    margin-left: 12.5%;
+    margin-right: 12.5%;
+    padding: 5px;
+}
+.flexbox-container {
+    display: flex;
+    background-color: darkgrey;
+    justify-content: space-around;
+}
+
+.flexbox-container > div {
+    flex: 50%;
+}
+
+.flexbox-item {
+    width: 25%;
+    margin: 10px;
+    min-height: 500px;
+    border: 3px solid #333;
+    background-color: #dfdfdf;
+    align-items: center;
+}
+
+header, footer {
+    background-color: black;
+    color: white;
+}
+
+header {
+    font-size: 50px;
+    text-align: center;
+}
+
+footer {
+    font-size: 15px;
+    text-align: left;
+}
+
+img {
+    width: 50%;
+    max-width: 480px;
+    max-height: 50%;
+    margin-left: 25%;
+    margin-right: 25%;
+}
+
+h2 {
+    text-align: center;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+h3 {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+li {
+    font-size: 15px;
+    font-weight: lighter;
+}
+
+.validate {
+    align-items: left;
+    width: auto;
+    height: auto;
+    margin: 0%;
+    border: 2px solid black;
+}

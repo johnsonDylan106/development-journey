@@ -1,0 +1,83 @@
+<!-- 
+Dylan Johnson
+Lab 3
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Medical Practice Form</title>
+<meta charset="UTF-8">
+<link rel = "stylesheet" href = "css.css">
+</head>
+
+<body>
+
+<div id = "page" >
+	<img src = "graphic/Hallway.jpg" alt = "hallway">
+</div>
+
+<div id="page-wrap">
+
+	<h1>Family Medical Practice</h1>
+	
+	<div class = "headers">
+		<h2>Patient Information</h2>
+	</div>
+	<br>
+	<div id = "information">
+		<form action = "output.php" method = "POST" autocomplete = "off">
+			<label for = "fname">First Name:</label><br>
+				<input type = "text" id = "fname" name = "fname">
+			<br><br>
+				
+			<label for = "lname">Last Name:</label><br>
+				<input type = "text" id = "lname" name = "lname">
+			<br><br>
+				
+			<label for = "birthDay">Birth Date:</label><br>
+				<input type = "date" id = "birthDay" class = "date" name = "birthDay">
+				<br><br>
+				
+			<label for = "dayPhoneNumber">Daytime Phone:</label><br>
+				<input type = "tel" id = "dayPhoneNumber" name = "dayPhoneNumber" placeholder = "(xxx) xxx-xxxx">
+			<br><br>
+				
+			<label for = "eveningPhoneNumber">Evening Phone:</label><br>
+				<input type = "tel" id = "eveningPhoneNumber" name = "eveningPhoneNumber" placeholder = "(xxx) xxx-xxxx">
+			<br><br>
+				
+			<label for = "firstTime">Is this your first time visiting the office?</label><br>
+				<input type = "radio" id = "firstTime" name = "yes" value = "Yes">Yes
+				<input type = "radio" id = "notFirstTime" name = "no" value = "No">No
+			<br><br>	
+	
+		<div class = "headers">
+			<h2>Appointment Information</h2>
+		</div>	
+		<br>
+			<label for = "date">Date:</label><br>
+				<input type = "date" id = "date" class = "date" name = "date">
+			<br><br>
+			<label for = "time">Time:</label><br>
+				<select name = "time" id = "time">
+					<option value = "8AM">8AM</option>
+					<option value = "10AM">10AM</option>
+					<option value = "12AM">12AM</option>
+					<option value = "2PM">2PM</option>
+					<option value = "4PM">4PM</option>
+				</select>
+			<br><br>
+			
+			<label for = "description">Please describe the reason for your visit:</label><br>
+				<textarea id = "description" name = "description"></textarea>
+			<br>
+			<input type = "submit" id = "submit">
+		</form>
+	</div>
+	
+</div>
+
+
+</body>
+</html>

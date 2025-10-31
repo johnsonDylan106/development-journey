@@ -1,0 +1,86 @@
+* {
+	box-sizing: border-box;
+}
+body {
+	margin-left: 20%;
+	margin-right: 20%;
+	text-align: left;
+}
+.resumeStyle {
+	background-color: silver;
+	border-radius: 10px;
+	padding: 1%;
+}
+.a {
+	color: white;
+}
+a {
+	color: black;
+}
+.header {
+	background-color: #00004C; 
+	color: white;
+	overflow: auto;
+}
+.headerText{
+	text-align: center;
+	display: block;
+}
+.headshotimg {
+	display: block;
+	width: 120px;
+	border: 3px solid white;
+	float: left;
+	margin: 0px 0px 15px 15px
+}
+a:hover {
+	color: red;
+}
+h2 {
+	text-transform: uppercase;
+	border-bottom: 3px dotted;
+	font-size: 18px;
+	text-align: right;
+	overflow: auto;
+}
+h3 {
+	font-size: 15px;
+}
+.column {
+	float: left;
+	padding: 10px;
+}
+.leftColumn {
+	width: 30%;
+}
+.rightColumn {
+	width: 70%;
+}
+.row:after {
+	content: "";
+	display: table;
+	clear: both;
+}
+@media screen and (max-width: 600px) {
+	.column {
+		width: 100%;
+	}
+}
+.work {
+	padding: 0px;
+	margin: 0px;
+}
+li, p.work {
+	font-size: 12px;
+}
+ul, li {
+	list-style-position: inside;
+}
+footer {
+	text-align: center;
+	border-top: 1px solid black;
+}
+h4 {
+	font-size: 30px;
+	font-weight: bold;
+}

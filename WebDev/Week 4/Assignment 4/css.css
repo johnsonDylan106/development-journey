@@ -1,0 +1,59 @@
+.backborder {
+    background-color: grey;
+    width: 295px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding-top: 4px;
+    padding-bottom: 5px;
+}
+
+.baseborder {
+    background-color:darkslategray;
+    width: 270px;
+    border-radius: 2ch;
+    margin: 4%;
+}
+
+
+h3 {
+    color: white;
+    text-align: center;
+    padding-top: 20px;
+}
+
+#display {
+    width: 80%;
+    align-content: center;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    text-align: right;
+    background-color: lightgoldenrodyellow;
+    height: 30px;
+}
+
+input {
+    width: 52.5px;
+    height: 50px;
+    background-color: lightgray;
+    border-radius: 1ch;
+    font-size: larger;
+    font-weight: bolder;
+}
+
+.operator {
+    background-color: orange;
+}
+
+.memory {
+    background-color: purple;
+}
+
+.equal {
+    background-color: green;
+}
+
+.clear {
+    background-color: red;
+}
