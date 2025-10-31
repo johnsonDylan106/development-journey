@@ -1,0 +1,4 @@
+Min       = 15
+Max       = 94
+Mean      = 56.12
+Median    = 63.0
